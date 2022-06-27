@@ -1,0 +1,294 @@
+.box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #fafafa;
+}
+
+.box .box-img {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-image: url(../image/contact-us-img/home-3678954_1920.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.box-nav .nav .nav-content ul li:nth-child(6) {
+    background-color: #dddddd;
+}
+
+.box-nav .nav .nav-content ul li:nth-child(6) a {
+    color: #000000;
+}
+
+.box-nav .nav .nav-content .triangle {
+    position: absolute;
+    top: 0;
+    margin-left: 513px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #14916a #14916a transparent transparent;
+    z-index: 99;
+}
+
+.box .box-main {
+    width: 1200px;
+    height: 551px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.box-main .contact-way {
+    width: 561px;
+    height: 452px;
+    margin: 50px auto 50px 40px;
+    border-right: 1px solid #dfdfdf;
+    text-align: left;
+    color: #000000;
+}
+
+.box-main .contact-way ul li {
+    margin-left: 6px;
+}
+
+.box-main .contact-way ul li:nth-child(1) {
+    margin-bottom: 22px;
+    font-size: 18px;
+}
+
+.box-main .contact-way ul li:nth-child(2),
+li:nth-child(3),
+li:nth-child(4) {
+    margin-bottom: 13px;
+    font-size: 16px;
+}
+
+.box-main .contact-way ul li:nth-child(5) {
+    margin-bottom: 23px;
+}
+
+.box-main .contact-way ul li:nth-child(6) {
+    font-size: 14px;
+    color: #a0a0a0;
+    margin-bottom: 65px;
+}
+
+.box-main .contact-way .contact-QRcode {
+    height: 119px;
+    width: 119px;
+    background-image: url(../image/contact-us-img/二维码拷贝.png);
+    background-size: 113%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 119px;
+}
+
+.box-main .contact-way .add-vx p:first-child {
+    width: auto;
+    height: auto;
+    margin-left: 84px;
+    margin-top: 25px;
+    font-size: 24px;
+    color: #333333;
+}
+
+.box-main .contact-way .add-vx p:first-child::before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 16px;
+    left: 0;
+    margin-left: 560px;
+    border-bottom: 2px solid #333333;
+}
+
+.box-main .contact-way .add-vx p:first-child::after {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 16px;
+    left: 0;
+    margin-left: 747px;
+    border-bottom: 2px solid #333333;
+}
+
+.box-main .contact-way .add-vx p:last-child {
+    margin-left: 70px;
+    font-size: 18px;
+    color: #333333;
+    margin-top: 16px;
+}
+
+.box-main .contact-way .add-vx p:last-child a {
+    color: #14916a;
+}
+
+.box-main .book-info {
+    height: 452px;
+    width: 599px;
+    margin: 50px auto;
+}
+
+.box-main .book-info p {
+    font-size: 24px;
+    margin-left: 189px;
+    margin-right: 217px;
+}
+
+.box-main .book-info p::before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 16px;
+    right: 0;
+    margin-right: 773px;
+    border-bottom: 2px solid #333333;
+}
+
+.box-main .book-info p::after {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 16px;
+    right: 0;
+    margin-right: 528px;
+    border-bottom: 2px solid #333333;
+}
+
+.box-main .book-info .info {
+    height: 216px;
+    width: 366px;
+    text-align: left;
+    margin-left: 110px;
+    font-size: 16px;
+}
+
+.box-main .book-info .info .box-input {
+    position: relative;
+    height: 40px;
+    width: 367px;
+    line-height: 40px;
+    margin-top: 30px;
+}
+
+.box-main .book-info .info .box-input::before {
+    content: "*";
+    position: absolute;
+    color: #ff0000;
+    float: left;
+    left: -16px;
+}
+
+.box-main .book-info .info .box-input .text-input {
+    height: 40px;
+    width: 273px;
+    border: 1px solid #bdbcb8;
+    margin-left: 30px;
+    line-height: 34px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.box-main .book-info .info .box-input .text-input input {
+    height: 35px;
+    width: 253px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-left: 11px;
+}
+
+::placeholder {
+    color: #999999;
+}
+
+#mar-top {
+    margin-top: 19px;
+}
+
+.info .sel-box {
+    position: relative;
+    width: 367px;
+    height: 40px;
+    margin-top: 19px;
+}
+
+.info .sel-box .triangle {
+    position: absolute;
+    border: 3px solid transparent;
+    border-top: 6px solid #333333;
+    margin-left: 352px;
+    margin-top: 18px;
+    pointer-events: none;
+}
+
+.info .sel-box .sel-text {
+    line-height: 40px;
+}
+
+.info .sel-box select {
+    height: 40px;
+    width: 273px;
+    border: 1px solid #bdbcb8;
+    margin-left: 30px;
+    line-height: 34px;
+    padding-left: 15px;
+    outline: none;
+    appearance: none;
+}
+
+.box-main .book-info .book-btn {
+    height: 60px;
+    width: 272px;
+    margin-top: 56px;
+    margin-left: 161px;
+    background-color: #333333;
+    border-radius: 50px;
+    font-size: 24px;
+    line-height: 60px;
+    color: #ffffff;
+}
+
+.box-main .book-info .book-btn:hover {
+    background-color: #14916a;
+    cursor: pointer;
+}
+
+.box #map {
+    height: 549px;
+    width: 1200px;
+    margin: 0 auto;
+    z-index: 999;
+}
+
+.box .map-mask-img {
+    position: absolute;
+    width: 100%;
+    height: 549px;
+    bottom: 500px;
+    background: url(../image/contact-us-img/图层9.png);
+}
+
+.box .left-map-mask {
+    position: absolute;
+    width: 352px;
+    height: 549px;
+    bottom: 500px;
+    background-color: #000000;
+    opacity: .5;
+    z-index: 999;
+}
+
+.box .right-map-mask {
+    position: absolute;
+    width: 352px;
+    height: 549px;
+    right: 0;
+    bottom: 500px;
+    background-color: #000000;
+    opacity: .5;
+    z-index: 999;
+}

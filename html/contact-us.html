@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>找我们聊聊</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/contact-us.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script type="text/javascript"
+        src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=S8P8d8zIwKXwAAGlDhuayCYBrLrlQVdQ"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box-img">
+            <!-- 联系我们小方框 -->
+            <div class="box-text">
+                <P class="box-text-en textOp"><strong>CONTACT US</strong></P>
+                <P class="box-text-zh textOp"><strong>联系我们</strong></P>
+            </div>
+        </div>
+        <!-- 导航栏 -->
+        <!-- 透明遮罩层 -->
+        <div class="mask"></div>
+        <div class="box-nav">
+            <!-- logo -->
+            <a href="../index.html">
+                <div class="logo left">
+                    <img src="../image/know-us-img/BearHousekeeper.png" alt="">
+                    <!-- 小三角 -->
+                    <div class="triangle"></div>
+                </div>
+            </a>
+            <!-- 导航栏内容 -->
+            <div class="nav left">
+                <div class="nav-content">
+                    <ul>
+                        <li><a href="../html/know-us.html">了解我们</a>
+                        </li>
+                        <li><a href="../html/case-share.html">案例分享</a>
+                            <!-- 导航栏选项小三角 -->
+                            <div class="triangle"></div>
+                        </li>
+                        <li><a href="#">精装服务</a></li>
+                        <li><a href="#">优质产品</a></li>
+                        <li><a href="../html/news.html">公司动态</a></li>
+                        <li><a href="../html/contact-us.html">找我们聊聊</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 第三方联系模块 -->
+            <div class="contact left">
+                <ul>
+                    <li class="wechat"><a href="#"><img src="../image/微信.png" alt=""></a>
+                        <!-- 微信扫码模块 -->
+                        <div class="box-QRcode">
+                            <div class="QRcode"></div>
+                        </div>
+                    </li>
+                    <li><a href="#"><img src="../image/微博.png" alt=""></a></li>
+                    <li><a href="#"><img src="../image/生活－大众点评.png" alt=""></a></li>
+                    <li><a href="#"><img src="../image/3d9d1d8f4480aa01c3387027dd09264a.png" alt=""></a></li>
+                    <li><a href="#"><img src="../image/齐家.png" alt=""></a></li>
+                    <li><a href="#"><img src="../image/土巴兔.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 版心 主题内容部分 -->
+        <div class="box-main">
+            <div class="contact-way left">
+                <ul>
+                    <li><strong>联系方式</strong></li>
+                    <li><strong>地址 : 成都市温江区珠江广场写字楼15楼</strong></li>
+                    <li><strong>电话 : 028-82708866</strong></li>
+                    <li><strong>手机 : 13558833169</strong></li>
+                    <li><strong>Q Q : 123456789</strong></li>
+                    <li>09:00 AM ~ 06:00 PM , 周末照常上班</li>
+                </ul>
+                <!-- 微信二维码 -->
+                <div class="left contact-QRcode"></div>
+                <div class="left add-vx">
+                    <p>扫微信二维码</p>
+                    <p>添加<a href="../index.html">熊管家</a>微信咨询</p>
+                </div>
+            </div>
+            <div class="book-info right">
+                <p>请客户顾问联系我</p>
+                <form>
+                    <div class="info">
+                        <div class="box-input">
+                            <div class="input-text left"><strong>您的姓名</strong></div>
+                            <div class="text-input left">
+                                <input type="text" placeholder="请填写您的姓名">
+                            </div>
+                        </div>
+                        <div id="mar-top" class="box-input">
+                            <div class="input-text left"><strong>手机号码</strong></div>
+                            <div class="text-input left">
+                                <input type="text" placeholder="请填写您的手机号码">
+                            </div>
+                        </div>
+                        <div class="sel-box">
+                            <div class="sel-text left"><strong>建筑面积</strong></div>
+                            <select class="left">
+                                <option value="" class="left">选填</option>
+                            </select>
+                            <!-- 小三角 -->
+                            <div class="triangle"></div>
+                        </div>
+                        <div class="sel-box">
+                            <div class="sel-text left"><strong>致电时间</strong></div>
+                            <select class="left">
+                                <option value="" class="left">立即联系</option>
+                            </select>
+                            <!-- 小三角 -->
+                            <div class="triangle"></div>
+                        </div>
+                    </div>
+                    <!-- 预约按钮 -->
+                    <div class="book-btn">
+                        <span>立即预约</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- 真实地图显示 -->
+        <!-- 地图遮罩层 -->
+        <div id="map"></div>
+        <div class="map-mask-img"></div>
+        <div class="left-map-mask"></div>
+        <div class="right-map-mask"></div>
+        <script type="text/javascript">
+            var map = new BMapGL.Map("map");
+            // 创建地图实例 
+            var point = new BMapGL.Point(116.404, 39.915);
+            // 创建点坐标 
+            map.centerAndZoom(point, 15);
+            // 初始化地图，设置中心点坐标和地图级别
+            var marker = new BMapGL.Marker(point);
+            map.addOverlay(marker)
+        </script>
+
+        <!-- 尾部区域 -->
+        <div class="footer">
+            <div class="footer-logo">
+                <a href="../index.html">
+                    <img src="../image/熊管家装饰.png" alt="">
+                </a>
+            </div>
+            <!-- logo和联系电话 -->
+            <div class="footer-tel-box">
+                <div class="footer-tel-left"></div>
+                <div class="footer-tel">
+                    <img src="../image/phone_03.png" alt="">
+                    <p><strong>028-82708866 / 13558833169</strong></p>
+                </div>
+                <div class="footer-tel-right"></div>
+            </div>
+            <div class="box-max">
+                <!-- 联系方式部分 -->
+                <div class="box-contact-information">
+                    <p>联系方式</p>
+                    <ul>
+                        <li><img src="../image/home.png" alt="">
+                            <label>成都熊管家装饰装修有限公司</label>
+                        </li>
+                        <li><img style="margin-left: 4px;" src="../image/address.png" alt="">
+                            <label>地址 : 成都市温江区珠江广场写字楼15楼</label>
+                        </li>
+                        <li><img src="../image/phone_03(1).png" alt="">
+                            <label>联系电话 : 028-82708866 ( 座机 ) /13558833169</label>
+                        </li>
+                        <li><img src="../image/email.png" alt="">
+                            <label>E-mail : admian@admin.com</label>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 快速导航部分 -->
+                <div class="box-navigation">
+                    <p>快速导航</p>
+                    <ul>
+                        <li><a href="../html/know-us.html">了解我们</a><span>/</span></li>
+                        <li><a href="../html/case-share.html">案例分享</a><span>/</span></li>
+                        <li><a href="#">精装服务<span>/</span></li>
+                        <li><a href="#">优质产品</a><span>/</span></li>
+                        <li><a href="../html/news.html">公司动态</a><span>/</span></li>
+                        <li><a href="../html/contact-us.html">联系我们</a></li>
+                    </ul>
+                    <div class="housekeeper-img">
+                        <img src="../image/您身边的装修管家.png" alt="">
+                    </div>
+                </div>
+                <!-- 联系我们部分 -->
+                <div class="box-entrance">
+                    <p class="start">联系我们</p>
+                    <div class="box-contact">
+                        <!-- 微信扫码及其他联系方式 -->
+                        <ul>
+                            <li class="wechat"><a href="#"><img src="../image/微信1.png" alt=""></a>
+                                <div class="footer-box-QRcode">
+                                    <div class="footer-QRcode"></div>
+                                </div>
+                            </li>
+                            <li><a href="#"><img src="../image/微博1.png" alt=""></a></li>
+                            <li><a href="#"><img src="../image/生活－大众点评1.png" alt=""></a></li>
+                            <li><a href="#"><img src="../image/音乐1.png" alt=""></a></li>
+                            <li><a href="#"><img src="../image/齐家拷贝1.png" alt=""></a></li>
+                            <li><a href="#"><img src="../image/土巴兔拷贝1.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <p class="end">互联网家装引领者</p>
+                </div>
+            </div>
+        </div>
+        <!-- 尾部版权标号 -->
+        <div class="copyright">
+            <lable>Copyright</lable>
+            <lable class="year">©2015-2019</lable>
+            <lable>成都熊管家装饰装修有限公司</lable>
+            <lable>版权所有</lable>
+        </div>
+    </div>
+</body>
+
+</html>

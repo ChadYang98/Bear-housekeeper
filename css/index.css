@@ -1,0 +1,422 @@
+.box {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.home-bgi {
+    width: 100%;
+    height: 1070px;
+    background-image: url(../image/jhk-1562048403583.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.nav-img {
+    position: absolute;
+    height: 1070px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0%;
+    left: 0%;
+    opacity: 0.5;
+}
+
+.cricle {
+    position: absolute;
+    top: 985px;
+    left: 918px;
+}
+
+.cricle ul li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cricle ul li:first-child {
+    background-color: #14916a;
+}
+
+.cricle ul li:last-child {
+    margin-right: 0;
+}
+
+.cricle ul li:hover {
+    /* transform: scale(1.2); */
+    background-color: #14916a;
+}
+
+.home {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    top: 133px;
+    /* margin-top: 160px; */
+    background-color: #ffffff;
+    border-bottom: 3px solid #37a180;
+}
+
+.home .triangle {
+    position: absolute;
+    width: 0;
+    top: 0;
+    right: 0;
+    border: 12px solid transparent;
+    border-top-color: #37a180;
+    border-right: none;
+    border-bottom: none;
+}
+
+.home img {
+    position: absolute;
+    top: 25px;
+    left: 54px;
+    height: 55px;
+    width: 177px;
+    background-color: #fff;
+}
+
+.nav {
+    position: absolute;
+    top: 290px;
+    left: 79px;
+}
+
+.nav ul {
+    text-align: left;
+    /* margin-top: 46px;
+    margin-left: 110px; */
+}
+
+.nav ul li {
+    height: 40px;
+    width: 136px;
+    line-height: 40px;
+    margin-bottom: 23px;
+    padding-left: 32px;
+    font-size: 18px;
+    border-radius: 10px 0 10px 0;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.nav ul li:hover {
+    background-color: #fff;
+    color: #14916a;
+}
+
+.box-tel {
+    position: absolute;
+    width: 234px;
+    height: 73px;
+    top: 720px;
+    left: 33px;
+    border: 1px solid rgba(255, 255, 255, .3);
+}
+
+.box-tel img {
+    position: absolute;
+    top: 25px;
+    left: 17px;
+}
+
+.box-tel .telNum-landine,
+.telNum-move {
+    color: #ececec;
+    text-align: left;
+    margin-left: 56px;
+    font-size: 22px;
+}
+
+.box-tel .telNum-landine {
+    margin-top: 8px;
+    margin-bottom: 1px;
+}
+
+.other-contact {
+    position: absolute;
+    width: 300px;
+    top: 818px;
+}
+
+.other-contact ul {
+    margin-left: 33px;
+}
+
+.other-contact ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.other-contact ul li:last-child {
+    margin-right: 0px;
+}
+
+.other-contact ul li:hover {
+    opacity: 0.9;
+}
+
+.other-contact ul li:first-child:hover .box-QRcode {
+    visibility: visible;
+}
+
+.box-QRcode {
+    visibility: hidden;
+    position: absolute;
+    top: 60px;
+    left: 33px;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .5);
+}
+
+.other-contact .box-QRcode::after {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: 1px;
+    margin-left: -1px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.other-contact .box-QRcode .QRcode {
+    width: 100px;
+    height: 100px;
+    background: url(../image/QRcode.jpg);
+    background-size: cover;
+    background-color: #14916a;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.box-main {
+    position: relative;
+    width: 100%;
+    height: 1076px;
+    background-image: url(../image/图层3.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.box-main .main-heart {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.box-main .main-heart .box-introduce {
+    width: 1200px;
+    height: 597px;
+}
+
+.box-main .main-heart .box-service {
+    position: relative;
+    width: 1200px;
+    height: 598px;
+    text-align: left;
+    margin-top: 108px;
+}
+
+.box-service .service {
+    width: 1200px;
+    height: 300px;
+}
+
+.box-service .service-img {
+    position: absolute;
+    width: 1200px;
+    height: 202px;
+    top: 96px;
+}
+
+.box-service .service-img .move-box {
+    position: absolute;
+    width: 294px;
+    height: 62px;
+    bottom: -62px;
+    background-color: rgba(6, 144, 101, .85);
+    transition: all 0.3s;
+}
+
+.box-service .service-img .move-box .move-box-text {
+    position: absolute;
+    width: 294px;
+    height: 62px;
+    text-align: left;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.box-service .service-img .move-box .move-box-text .text-tit {
+    color: #eaf4f0;
+    font-size: 20px;
+}
+
+.box-service .service-img .move-box .move-box-text .text-content {
+    color: #e0eee8;
+    font-size: 12px;
+}
+
+.box-service .service-img ul li {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    height: 201px;
+    width: 294px;
+    margin-right: 8px;
+    transition: all .3s;
+}
+
+.box-service .service-img ul li:last-child {
+    margin-right: 0;
+}
+
+.box-service .service-img ul li:hover {
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.box-service .service-img ul li:hover .move-box {
+    bottom: 0;
+}
+
+.box-service .service-color {
+    width: 7px;
+    height: 49px;
+    background: linear-gradient(#16da9d, #14926b);
+    float: left;
+    margin-right: 20px;
+}
+
+.box-service .service-text {
+    width: 250px;
+    height: 49px;
+    float: left;
+}
+
+.box-service .service-text .service-zh {
+    display: block;
+    height: 32px;
+    font-size: 32px;
+    margin-top: -6px;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.box-service .service-text .service-en {
+    display: block;
+    height: 14px;
+    font-size: 14px;
+    margin-top: -2px;
+    opacity: .5;
+}
+
+.box-main .main-heart .introduce-img {
+    width: 650px;
+    height: 490px;
+    border-bottom: 4px solid #16b685;
+    margin-top: 107px;
+    background: url(../image/图层2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    float: right;
+    top: 107px;
+    right: 0;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .3);
+}
+
+.box-main .introduce {
+    position: absolute;
+    width: 300px;
+    height: 49px;
+    top: 107px;
+    left: 361px;
+    text-align: left;
+}
+
+.box-main .introduce .introduce-color {
+    width: 7px;
+    height: 49px;
+    background: linear-gradient(#16da9d, #14926b);
+    float: left;
+    margin-right: 20px;
+}
+
+.box-main .introduce .introduce-color .introduce-text {
+    width: 221px;
+    height: 49px;
+    border: 1px solid #14926b;
+    float: left;
+}
+
+.box-main .introduce .introduce-text .introduce-zh {
+    display: block;
+    height: 32px;
+    font-size: 32px;
+    margin-top: -6px;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.box-main .introduce .introduce-text .introduce-en {
+    display: block;
+    height: 14px;
+    font-size: 14px;
+    opacity: .5;
+}
+
+.box-main .introduce-content {
+    position: absolute;
+    width: 500px;
+    height: 155px;
+    top: 216px;
+    left: 361px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 32px;
+    margin-top: -12px;
+}
+
+.box-main .main-heart .btn-contact {
+    position: absolute;
+    height: 44px;
+    width: 164px;
+    left: 676px;
+    top: 485px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, .3), -2px -2px 8px rgba(0, 0, 0, .3) inset;
+}
+
+.box-main .main-heart .btn-contact p {
+    line-height: 44px;
+    color: #14916a;
+    font-size: 24px;
+    margin-left: -10px;
+}
+
+.box-main .main-heart .btn-contact::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 20px;
+    left: 132px;
+    border: 4px solid transparent;
+    border-left: 6px solid #14916a;
+}

@@ -1,0 +1,142 @@
+.box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #fafafa;
+}
+
+.box .box-img {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-image: url(../image/details-img/home-3678954_1920.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.box-nav .nav .nav-content ul li:nth-child(5) {
+    background-color: #dddddd;
+}
+
+.box-nav .nav .nav-content ul li:nth-child(5) a {
+    color: #000000;
+}
+
+.box-nav .nav .nav-content .triangle {
+    position: absolute;
+    top: 0;
+    margin-left: 408px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #14916a #14916a transparent transparent;
+    z-index: 99;
+}
+
+.box .box-main-text {
+    background-color: #fff;
+    width: 1200px;
+    height: 1394px;
+    margin: 29px auto 60px auto;
+    border-top: 5px solid #e8e8e8;
+    border-bottom: 10px solid #e8e8e8;
+}
+
+.box .box-main-text .title {
+    width: 1120px;
+    height: 54px;
+    margin: 25px auto 0 auto;
+    font-size: 24px;
+    color: #414141;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.box .box-main-text .time {
+    width: 1120px;
+    height: 68px;
+    margin: 0 auto 0 auto;
+    line-height: 68px;
+    font-size: 12px;
+    text-align: left;
+    color: #adadad;
+}
+
+.box .box-main-text .time span,label {
+    color: #14916a;
+}
+
+.box .box-main-text .time label {
+    margin-left: 16px;
+}
+
+.box .box-main-text .abstract {
+    height: 96px;
+    width: 1120px;
+    line-height: 22px;
+    margin: 0 auto;
+    border: 1px solid #eeeeee;
+    padding: 14px 28px 13px 32px;
+    font-size: 12px;
+    text-align: left;
+    color: #999999;
+}
+
+.box .box-main-text .main-text {
+    height: 986px;
+    width: 1120px;
+    margin: 0 auto;
+    text-align: left;
+    color: #333333;
+    font-size: 16px;
+    padding-top: 18px;
+    line-height: 35px;
+}
+
+.box .box-main-text .text-one {
+    margin-bottom: 37px;
+}
+
+.box .box-main-text .text-two {
+    margin-bottom: 30px;
+}
+
+.box .box-main-text .main-text .text-img {
+    width: 550px;
+    height: 365px;
+    margin: 0 auto 33px auto;
+    background-image: url(../image/details-img/图层20.png);
+}
+
+.box .box-main-text .main-text .box-text-three {
+    width: 1120px;
+    height: 120px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.box .box-main-text .main-text .box-page-turning {
+    width: 1120px;
+    height: 104px;
+    margin: 0 auto;
+}
+
+.box .box-main-text .main-text .box-page-turning .last,.next {
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    margin-top: 22px;
+}
+
+.box-page-turning .last span {
+    color: #14916a;
+}
+
+.box-page-turning .last:hover,.next:hover {
+    color: #14916a;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.box-page-turning .next span {
+    color: #14916a;
+}

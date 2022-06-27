@@ -1,0 +1,439 @@
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* 头部文字框透明度 */
+.textOp {
+    opacity: .8;
+}
+
+/* 头部 */
+.box .box-img .box-text {
+    position: absolute;
+    bottom: 78px;
+    left: 363px;
+    width: 333px;
+    height: 130px;
+    /* background-color: #14916a; */
+    background-color: rgba(20, 145, 106, .8);
+    border-radius: 50px 0 50px 0;
+}
+
+.box .box-img .box-text P {
+    color: #ffffff;
+}
+
+.box .box-img .box-text .box-text-en {
+    position: absolute;
+    right: 0;
+    margin-right: 33px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.box .box-img .box-text .box-text-zh {
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    margin-top: 54px;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.box .mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95px;
+    opacity: .9;
+    background-color: #666666;
+    z-index: 9999;
+}
+
+.box .box-nav {
+    width: 100%;
+    height: 95px;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+
+.box .logo {
+    width: 362px;
+    height: 95px;
+    background-color: #f1f1f1;
+    border-radius: 0 0 50px 0;
+    text-align: left;
+}
+
+.box .logo img {
+    margin-top: 23px;
+    margin-left: 59px;
+}
+
+.box-nav .triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 12px;
+    border-style: solid;
+    border-color: #14916a transparent transparent #14916a;
+}
+
+.box-nav .nav .nav-content {
+    width: 630px;
+    height: 95px;
+    margin-left: 450px;
+}
+
+.box-nav .nav .nav-content ul {
+    margin-top: 29.5px;
+    text-align: center;
+    height: 95px;
+}
+
+.box-nav .nav .nav-content ul li {
+    position: relative;
+    float: left;
+    height: 36px;
+    width: 105px;
+    line-height: 36px;
+    font-size: 16px;
+    border-radius: 10px 0 10px 0;
+    line-height: 36px;
+    color: #c2c2c2;
+    transition: all 0.3s;
+}
+
+.box-nav .nav .nav-content ul li a {
+    font-size: 16px;
+    color: #dddddd;
+}
+
+.box-nav .nav .nav-content ul li:hover {
+    background-color: #dddddd;
+}
+
+.box-nav .nav .nav-content ul li:hover a {
+    color: #000000;
+}
+
+.box-nav .nav .nav-content ul li:hover a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 6px;
+    color: #000000;
+    border-style: solid;
+    border-color: #14916a #14916a transparent transparent;
+}
+
+.box-nav .nav .nav-content ul li:last-child {
+    margin-right: 0;
+}
+
+.box-nav .contact {
+    height: 95px;
+    line-height: 95px;
+}
+
+.box-nav .contact ul {
+    margin-left: 162px;
+}
+
+.box-nav .contact ul li {
+    float: left;
+    margin-right: 27px;
+}
+
+.box-nav .contact ul li:last-child {
+    margin-right: 0;
+}
+
+.box-nav .contact ul li:hover {
+    opacity: .9;
+}
+
+.box-nav .contact ul li:first-child:hover .box-QRcode {
+    visibility: visible;
+}
+
+.contact ul .box-QRcode {
+    visibility: hidden;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 82px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .5);
+}
+
+.box-QRcode::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    margin-left: -74px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+} 
+
+.box-QRcode .QRcode {
+    width: 100px;
+    height: 100px;
+    background: url(../image/QRcode.jpg);
+    background-size: cover;
+    background-color: #14916a;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+/* 尾部 */
+.footer {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #f3f3f3;
+    border-top: 1px solid #e1e1e1;
+}
+
+.footer .footer-tel-box {
+    position: absolute;
+    width: 100%;
+    height: 68px;
+    top: 125px;
+}
+
+.footer .footer-tel-box .footer-tel-left {
+    position: absolute;
+    width: 50px;
+    height: 31px;
+    top: 18px;
+    left: 688px;
+    background-color: #f3f3f3;
+    z-index: 99;
+}
+
+.footer .footer-tel-box .footer-tel-right {
+    position: absolute;
+    width: 50px;
+    height: 31px;
+    top: 18px;
+    left: 1180px;
+    background-color: #f3f3f3;
+    z-index: 99;
+}
+
+.footer .footer-logo {
+    position: absolute;
+    top: 54px;
+    left: 854px;
+}
+
+.footer .footer-tel {
+    position: absolute;
+    width: 447px;
+    height: 68px;
+    /* top: 125px; */
+    left: 737px;
+    border: 1px solid #b9b9b9;
+}
+
+.footer .footer-tel img {
+    margin-top: 17px;
+    margin-left: 45px;
+    margin-right: 11px;
+    float: left;
+}
+
+.footer .footer-tel p {
+    color: #14916a;
+    margin-top: 19px;
+    text-align: left;
+    font-size: 22px;
+}
+
+.footer .box-max {
+    position: absolute;
+    top: 241px;
+    float: left;
+}
+
+.footer .box-max .box-contact-information {
+    width: 292px;
+    height: 135px;
+    margin-left: 351px;
+    text-align: left;
+    float: left;
+}
+
+.footer .box-max .box-contact-information p {
+    font-size: 16px;
+    margin-bottom: 29px;
+    color: #000000;
+}
+
+.footer .box-max .box-contact-information ul {
+    text-align: left;
+    height: 85px;
+    width: 19px;
+}
+
+.footer .box-max .box-contact-information ul li {
+    margin-bottom: 7px;
+    width: 302px;
+}
+
+.footer .box-max .box-contact-information ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footer .box-max .box-contact-information ul li label {
+    font-size: 12px;
+    text-align: left;
+    color: #717171;
+}
+
+.footer .box-max .box-contact-information ul li:hover img {
+    opacity: .9;
+}
+.footer .box-max .box-contact-information ul li:hover label {
+    color: #14916a;
+}
+
+.footer .box-max .box-contact-information ul li img {
+    margin-right: 2px;
+}
+
+.footer .box-max .box-navigation {
+    width: 375px;
+    height: 133px;
+    margin-left: 128px;
+    float: left;
+}
+
+.footer .box-max .box-entrance {
+    position: relative;
+    width: 250px;
+    height: 110px;
+    margin-left: 134px;
+    text-align: left;
+    float: left;
+}
+
+.footer .box-max .box-navigation p {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 29px;
+    color: #000000;
+}
+
+.footer .box-max .box-navigation ul li {
+    float: left;
+    font-size: 12px;
+    color: #717171;
+}
+
+.footer .box-max .box-navigation ul li a {
+    color: #717171;
+}
+
+.footer .box-max .box-navigation ul li a:hover {
+    color: #14916a;
+    text-decoration: underline;
+}
+
+.footer .box-max .box-navigation ul li span {
+    margin: 0 6px;
+}
+
+.footer .box-max .box-navigation .housekeeper-img {
+    text-align: left;
+    margin-left: 65px;
+    margin-top: 77px;
+}
+
+.footer .box-max .box-entrance .start {
+    font-size: 16px;
+    margin-bottom: 29px;
+    color: #000000;
+}
+
+.box-entrance .box-contact {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+}
+.box-entrance .box-contact ul {
+    width: 228px;
+    height: 26px;
+}
+.box-entrance .box-contact ul li {
+    margin-right: 18px;
+    float: left;
+}
+.box-entrance .box-contact ul li:hover {
+    opacity: .9;
+}
+.box-entrance .box-contact ul li:last-child {
+    margin-right: 0;
+}
+.box-contact ul li:first-child:hover .footer-box-QRcode {
+    visibility: visible;
+}
+.footer-box-QRcode {
+    visibility: hidden;
+    position: absolute;
+    top: -64px;
+    left: 45px;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    /* border: 1px solid rgba(72, 160, 129, .5); */
+}
+.footer-box-QRcode::after {
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: -80px;
+    margin-left: 50px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+.footer-box-QRcode .footer-QRcode {
+    width: 100px;
+    height: 100px;
+    background: url(../image/QRcode.jpg);
+    background-size: cover;
+    background-color: #14916a;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.box-entrance .end {
+    margin-top: 79px;
+    font-size: 14px;
+    color: #14916a;
+}
+
+.copyright {
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    border-top: 1px solid #d3d3d3;
+    bottom: 0;
+    color: #555555;
+    font-size: 12px;
+    /* background-color: #14916a; */
+}
+.copyright .year {
+    margin-right: 6px;
+}

@@ -1,0 +1,228 @@
+.box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.box .box-img {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-image: url(../image/know-us-img/architecture-2768284_1920.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.box .about {
+    width: 100%;
+    height: 642px;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+}
+
+.box-nav .nav .nav-content .triangle {
+    position: absolute;
+    top: 0;
+    margin-left: 93px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #14916a #14916a transparent transparent;
+}
+
+.about .about-head img {
+    margin-top: 49px;
+}
+
+.about .about-head p {
+    font-size: 32px;
+    color: #333333;
+    line-height: 32px;
+    margin-top: 8px;
+}
+
+.about .about-head .about-box {
+    width: 180px;
+    height: 26px;
+    border: 1px solid #b6b6b6;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about .about-head .about-box span {
+    line-height: 26px;
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+}
+
+.about .abotu-img {
+    position: relative;
+    width: 1200px;
+    height: 470px;
+    background-image: url(../image/know-us-img/图层2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 22px auto 0 auto;
+}
+
+.about .abotu-img .about-mask {
+    position: absolute;
+    height: 470px;
+    width: 324px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.about .abotu-img .about-mask:hover {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.about .abotu-img .about-mask:hover .about-text {
+    opacity: 1;
+}
+
+.about .abotu-img .about-mask .about-text {
+    opacity: .7;
+}
+
+.about .abotu-img .about-mask .about-text {
+    text-align: left;
+    position: absolute;
+    height: 470px;
+    width: 324px;
+    top: 0;
+    margin: 60px 30px 91px 30px;
+    color: #ffffff;
+}
+
+.about .abotu-img .about-mask .about-text .text-line {
+    width: 268px;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    border-top: 1px solid #f5f5f5;
+}
+
+.text-indent {
+    text-indent: 2em;
+}
+
+.about .abotu-img .about-mask .about-text .text-one {
+    font-size: 27px;
+}
+
+.about .abotu-img .about-mask .about-text .text-two {
+    font-size: 14px;
+}
+
+.about .abotu-img .about-mask .about-text .text-three {
+    padding: 6px 0;
+    text-align: left;
+    font-size: 14px;
+}
+
+.box .team-show {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.team-show .left-arr {
+    position: absolute;
+    left: 0;
+    margin-left: 280px;
+    bottom: 770px;
+}
+.team-show .right-arr {
+    position: absolute;
+    right: 0;
+    margin-right: 280px;
+    bottom: 770px;
+}
+.team-head img {
+    margin-top: 49px;
+}
+
+.team-head p {
+    font-size: 32px;
+    color: #333333;
+    line-height: 32px;
+    margin-top: 8px;
+}
+
+.team-head .team-box {
+    width: 180px;
+    height: 26px;
+    border: 1px solid #b6b6b6;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-head .team-box span {
+    line-height: 26px;
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+}
+
+.team-img {
+    position: relative;
+    width: 1200px;
+    height: 503px;
+    background-image: url(../image/know-us-img/图层6.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px auto 0 auto;
+    overflow: hidden;
+}
+
+.team-img:hover .move-box {
+    visibility: visible;
+    bottom: 18px;
+}
+
+.team-img .move-box {
+    visibility: hidden;
+    position: absolute;
+    width: 1200px;
+    height: 84px;
+    bottom: -66px;
+    background-color: rgba(0, 0, 0, .6);
+    transition: all 0.3s;
+}
+.team-img .move-box .describe-zh {
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    font-size: 25px;
+    margin: 20px 524px 0 524px;
+}
+.team-img .move-box .describe-en {
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 52px 540px 18px 536px;
+}
+.hid {
+    position: absolute;
+    width: 1200px;
+    height: 30px;
+    bottom: 513px;
+    background-color: #fff;
+}
+.box-nav .nav .nav-content ul li:first-child {
+    background-color: #dddddd;
+}
+
+.box-nav .nav .nav-content ul li:first-child a {
+    color: #000000;
+}
+.footer {
+    margin-top: 24px;
+}

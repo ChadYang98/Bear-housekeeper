@@ -1,0 +1,149 @@
+.box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.box .box-img {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-image: url(../image/case-share-img/02aafcd4e4c8dbfdaf26f0bff3bf6ec5.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.box-nav .nav .nav-content .triangle {
+    position: absolute;
+    top: 0;
+    margin-left: 93px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #14916a #14916a transparent transparent;
+    z-index: 99;
+}
+
+.box-nav .nav .nav-content ul li:nth-child(2) {
+    background-color: #dddddd;
+}
+
+.box-nav .nav .nav-content ul li:nth-child(2) a {
+    color: #000000;
+}
+
+.box .case-img {
+    width: 1200px;
+    height: 1654px;
+    margin: 37px auto 47px auto;
+    position: relative;
+}
+
+.box .case-img ul li {
+    float: left;
+    height: 400px;
+    width: 590px;
+    overflow: hidden;
+}
+
+.box .case-img ul li:hover .mask-img {
+    visibility: visible;
+}
+
+.box .case-img ul li:hover .mask-img .triangle {
+    visibility: hidden;
+}
+
+.box .case-img ul li:nth-child(1) {
+    background-image: url(../image/case-share-img/图层7.png);
+    background-size: 106%;
+    background-position: -10px 0px;
+    margin-right: 20px;
+    margin-bottom: 23px;
+    background-repeat: no-repeat;
+}
+
+.box .case-img ul li:nth-child(2) {
+    background-image: url(../image/case-share-img/图层8.png);
+    background-size: 155%;
+    background-position: -38px -79px;
+    margin-bottom: 23px;
+    background-repeat: no-repeat;
+}
+
+.box .case-img ul li:nth-child(3) {
+    background-image: url(../image/case-share-img/图层9.png);
+    background-size: 145%;
+    background-position: -150px -70px;
+    margin-right: 20px;
+    margin-bottom: 23px;
+    background-repeat: no-repeat;
+}
+
+.box .case-img ul li:nth-child(4) {
+    background-image: url(../image/case-share-img/图层10.png);
+    background-size: 142%;
+    background-position: -125px -70px;
+    margin-bottom: 23px;
+    background-repeat: no-repeat;
+}
+
+.box .case-img ul li:nth-child(5) {
+    background-image: url(../image/case-share-img/图层11.png);
+    background-size: 125%;
+    background-position: -90px -55px;
+    margin-right: 20px;
+    margin-bottom: 23px;
+    background-repeat: no-repeat;
+}
+
+.box .case-img ul li:nth-child(6) {
+    background-image: url(../image/case-share-img/图层12.png);
+    background-size: 129%;
+    background-position: -114px -45px;
+    margin-bottom: 23px;
+    background-repeat: no-repeat;
+}
+
+.box .case-img ul li:nth-child(7) {
+    background-image: url(../image/case-share-img/图层13.png);
+    background-size: 130%;
+    background-position: -80px -30px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+}
+
+.box .case-img ul li:nth-child(8) {
+    background-image: url(../image/case-share-img/图层14.png);
+    background-size: 135%;
+    background-position: -95px -63px;
+    background-repeat: no-repeat;
+}
+
+.case-img .triangle {
+    visibility: visible;
+    position: absolute;
+    top: -30px;
+    margin-left: 528px;
+    border-width: 16px;
+    border-style: solid;
+    border-color: #14916a #14916a transparent transparent;
+    z-index: 99;
+    opacity: .5;
+}
+
+.case-img .mask-img {
+    visibility: hidden;
+    position: absolute;
+    width: 530px;
+    height: 340px;
+    background-color: rgba(0, 0, 0, .7);
+    margin: 30px;
+}
+
+.case-img .mask-img .mask-text {
+    font-size: 27px;
+    color: #f3f3f3;
+    margin: 140px 180px 170px 190px;
+}
